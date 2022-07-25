@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Insurance.Repository\Insurance.Repository.csproj" />
+    <ProjectReference Include="..\Insurance.Domain\Insurance.Domain.csproj" />
+    <ProjectReference Include="..\Insurance.Operations\Insurance.Operations.csproj" />
+  </ItemGroup>
+
+</Project>
