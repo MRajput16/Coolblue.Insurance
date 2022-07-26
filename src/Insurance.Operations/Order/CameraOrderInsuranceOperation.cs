@@ -13,7 +13,7 @@ namespace Insurance.Operations
         /// <returns></returns>
         public float Calculate(Order order)
         {
-            var containsCamerasMoreThanOne = order.Products.Where(p => p.IsInsured && p.ProductType == ProductType.Camera).Count() > 1;
+            var containsCamerasMoreThanOne = order.Products.Where(p => p.IsInsured && p.ProductType == ProductType.Camera).Count() >= 1;
             if (!containsCamerasMoreThanOne)
             {
                 return 0;
